@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b3381-f395-4d2b-9e8d-6d9421338b04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lr3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/FormattedPrinter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Game.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Game2D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Lr3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Lr3Task.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibrium.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibriumSituation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/NashEquilibrium.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/ParetoOptimality.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Player.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Situation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lr3.json" beforeDir="false" afterPath="$PROJECT_DIR$/lr3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibrium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibrium.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/NashEquilibrium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/NashEquilibrium.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +38,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20230415_0000",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="neilyich" />
@@ -71,17 +52,6 @@
     <configuration name="Lr3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="neilyich.Lr3Kt" />
       <module name="consoleApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +73,7 @@
       <workItem from="1680643827663" duration="18430000" />
       <workItem from="1680731217485" duration="6779000" />
       <workItem from="1681510464168" duration="1710000" />
+      <workItem from="1681725770347" duration="2197000" />
     </task>
     <servers />
   </component>
@@ -119,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

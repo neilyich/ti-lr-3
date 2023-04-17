@@ -35,5 +35,5 @@ class NashEquilibrium(
 }
 
 private fun Player.wantsToChange(from: Situation, to: Situation): Boolean {
-    return to[id] > from[id]
+    return to[id] >= from[id]
 }

@@ -1,6 +1,6 @@
 {
   "randomGame": {
-    "seed": 100,
+    "seed": 41,
     "firstPlayerStrategiesCount": 10,
     "secondPlayerStrategiesCount": 10,
     "minValue": -50,

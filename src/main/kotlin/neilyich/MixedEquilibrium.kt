@@ -38,20 +38,7 @@ class MixedEquilibrium(
         val a = getPlayerWinMatrix(game2D.players()[0])
         val b = getPlayerWinMatrix(game2D.players()[1])
         val notA = reverse(a)
-        //println("A: ${det(a)}")
-        //a.forEach { println(it) }
-        //println()
-        //notA.forEach { println(it) }
-        //println()
-        //mult(a, notA).forEach { println(it) }
         val notB = reverse(b)
-        //println()
-        //println("B: ${det(b)}")
-        //b.forEach { println(it) }
-        //println()
-        //notB.forEach { println(it) }
-        //println()
-        //mult(b, notB).forEach { println(it) }
         val vA = 1.0 / (multURight(multULeft(notA)))
         val vB = 1.0 / (multURight(multULeft(notB)))
         val x = multULeft(notB).map { it * vB }
@@ -131,7 +118,7 @@ class MixedEquilibrium(
 
 private fun List<Int>.dominates(other: List<Int>): Boolean {
     for (i in indices) {
-        if (this[i] < other[i]) {
+        if (this[i] > other[i]) {
             return false
         }
     }
