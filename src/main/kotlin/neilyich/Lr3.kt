@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.module.kotlin.kotlinModule
 import neilyich.FormattedPrinter.withBlue
-import neilyich.FormattedPrinter.withPurple
+import neilyich.FormattedPrinter.withGreen
 import neilyich.FormattedPrinter.withRed
 import java.io.File
 import kotlin.math.max
@@ -37,7 +37,7 @@ fun main() {
     println(" - ситуации, равновесные по Нэшу")
     withBlue { print("(*,*)") }
     println(" - ситуации, оптимальные по Парето")
-    withPurple { print("(*,*)") }
+    withGreen { print("(*,*)") }
     println(" - ситуации, равновесные по Нэшу и оптимальные по Парето")
 
     println()

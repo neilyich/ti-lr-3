@@ -16,7 +16,8 @@ class MixedEquilibrium(
                 println("Игрок ${player.id+1} имеет доминирующую стратегию ${dominantStrategy+1}, " +
                         "поэтому игра имеет единственную ситуацию равновесия по Нэшу")
                 if (nashEquilibriumCount == 1) {
-                    println("Единственная ситуация равновесия по Нэшу уже найдена в чистых стратегиях")
+                    val nashEquilibriumSituation = game2D.situations().find { it.isNashEquilibrium }
+                    println("Единственная ситуация равновесия по Нэшу уже найдена в чистых стратегиях: $nashEquilibriumSituation")
                     return null
                 }
             }
@@ -35,8 +36,8 @@ class MixedEquilibrium(
                 return null
             }
         }
-        val a = getPlayerWinMatrix(game2D.players()[0])
-        val b = getPlayerWinMatrix(game2D.players()[1])
+        val a = game2D.playerWinMatrix(game2D.players()[0])
+        val b = game2D.playerWinMatrix(game2D.players()[1])
         val notA = reverse(a)
         val notB = reverse(b)
         val vA = 1.0 / (multURight(multULeft(notA)))
@@ -44,12 +45,6 @@ class MixedEquilibrium(
         val x = multULeft(notB).map { it * vB }
         val y = multURight(notA).map { it * vA }
         return MixedEquilibriumSituation(listOf(x, y), listOf(vA, vB))
-    }
-
-    private fun getPlayerWinMatrix(player: Player): List<List<Int>> {
-        return (0 until game2D.rows).map { r ->
-            (0 until game2D.cols).map { c -> game2D.situation(r, c)[player.id] }
-        }
     }
 
     private fun reverse(matrix2x2: List<List<Int>>): List<List<Double>> {
@@ -87,24 +82,8 @@ class MixedEquilibrium(
         return vector.sum()
     }
 
-    private fun mult(a: List<List<Int>>, b: List<List<Double>>): List<List<Double>> {
-        val result = mutableListOf<List<Double>>()
-        for (r in a.indices) {
-            val row = mutableListOf<Double>()
-            for (c in b[0].indices) {
-                var sum = 0.0
-                for (k in a[0].indices) {
-                    sum += a[r][k] * b[k][c]
-                }
-                row.add(sum)
-            }
-            result.add(row)
-        }
-        return result
-    }
-
     private fun dominantStrategy(player: Player): Int? {
-        val wins = getPlayerWinMatrix(player)
+        val wins = game2D.playerWinMatrix(player)
         for (i in wins.indices) {
             val dominantCandidate = wins[i]
             val isDominant = wins.all { dominantCandidate.dominates(it) }

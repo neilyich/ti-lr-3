@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1b3381-f395-4d2b-9e8d-6d9421338b04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0c1b3381-f395-4d2b-9e8d-6d9421338b04" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lr3.json" beforeDir="false" afterPath="$PROJECT_DIR$/lr3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/FormattedPrinter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/FormattedPrinter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/Game2D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Game2D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/Lr3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Lr3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibrium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/MixedEquilibrium.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/NashEquilibrium.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/NashEquilibrium.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/neilyich/Situation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/neilyich/Situation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,7 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,11 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230423_0001",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="neilyich" />
@@ -52,6 +60,17 @@
     <configuration name="Lr3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="neilyich.Lr3Kt" />
       <module name="consoleApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,9 +91,19 @@
       <updated>1680643826215</updated>
       <workItem from="1680643827663" duration="18430000" />
       <workItem from="1680731217485" duration="6779000" />
-      <workItem from="1681510464168" duration="1710000" />
-      <workItem from="1681725770347" duration="2197000" />
+      <workItem from="1681510464168" duration="2544000" />
+      <workItem from="1681562503439" duration="4503000" />
+      <workItem from="1681640108432" duration="454000" />
+      <workItem from="1682276013491" duration="4233000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1681512627989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681512627990</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +119,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

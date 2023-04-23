@@ -7,10 +7,6 @@ data class Situation(
 ) {
     constructor(vararg win: Int) : this(win.toList())
 
-//
-//    var optimalByPareto = OptimalByPareto.UNKNOWN
-//    var nashEquilibrium = NashEquilibrium.UNKNOWN
-//
     enum class OptimalByPareto {
         IS, NOT, UNKNOWN
     }
@@ -36,36 +32,6 @@ data class Situation(
     }
 
     override fun toString(): String {
-        return win.toString()
+        return win.joinToString(prefix = "(", postfix = ")", separator = ",") { it.toString() }
     }
-//
-//
-//    fun canAllIncreaseWin(other: Situation): Boolean {
-//        var hasLess = false
-//        var hasBigger = false
-//        for (i in win.indices) {
-//            if (this[i] < win[i]) {
-//                hasBigger = true
-//            } else if (this[i] > win[i]) {
-//                hasLess = true
-//            }
-//            if (hasBigger && hasLess) {
-//                break
-//            }
-//        }
-//        if (hasBigger) {
-//            if (hasLess) {
-//                return true
-//            } else {
-//                optimalByPareto = OptimalByPareto.NOT
-//                return false
-//            }
-//        } else {
-//            if (hasLess) {
-//                return false
-//            } else {
-//                return true
-//            }
-//        }
-//    }
 }

@@ -21,6 +21,17 @@ class Game2D(
         return listOf(Player(0, rows), Player(1, cols))
     }
 
+    fun playerWinMatrix(player: Player): List<List<Int>> {
+        if (player.id == 0) {
+            return (0 until rows).map { r ->
+                (0 until cols).map { c -> situation(r, c)[player.id] }
+            }
+        }
+        return (0 until cols).map { c ->
+            (0 until rows).map { r -> situation(r, c)[player.id] }
+        }
+    }
+
     override fun iterator(): Iterator<List<Int>> {
         return object : Iterator<List<Int>> {
             private var i = 0

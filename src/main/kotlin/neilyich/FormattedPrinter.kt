@@ -37,8 +37,8 @@ object FormattedPrinter {
         printWithColor(31, printBlock)
     }
 
-    fun withPurple(printBlock: FormattedPrinter.() -> Unit) {
-        printWithColor(35, printBlock)
+    fun withGreen(printBlock: FormattedPrinter.() -> Unit) {
+        printWithColor(32, printBlock)
     }
 
     fun withGray(printBlock: FormattedPrinter.() -> Unit) {
@@ -70,7 +70,7 @@ object FormattedPrinter {
                 val situation = game2D.situation(r, c)
                 val usingFormatting: (printBlock: FormattedPrinter.() -> Unit) -> Unit = if (situation.isNashEquilibrium) {
                     if (situation.isOptimalByPareto) {
-                        this::withPurple
+                        this::withGreen
                     } else {
                         this::withRed
                     }
